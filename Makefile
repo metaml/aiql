@@ -33,7 +33,7 @@ clean: ## clean
 	-cabal clean
 
 cleaner: clean ## cleaner
-	-find . -name \~ | xargs rm -f
+	-find . -name \*~ | xargs rm -f
 
 clobber: clean cleaner ## cleanpq
 	rm -rf tmp/*
